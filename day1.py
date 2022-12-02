@@ -46,12 +46,11 @@ elves = []
 
 with open('input1.txt') as input:
     for lines in input:
-        
         if lines.strip():
             count += int(lines)
         else:
-            if maxCal < count:
-                maxCal = count
+            if maxCal < count : maxCal = count
+                
                 # part 2
                 #elves.append(count)
             elves.append(count)
