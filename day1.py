@@ -50,20 +50,13 @@ with open('input1.txt') as input:
             count += int(lines)
         else:
             if maxCal < count : maxCal = count
-                
-                # part 2
-                #elves.append(count)
             elves.append(count)
             count = 0
 # part 2
 elves.sort(reverse=True)
-print(elves)
-# print(elves[:3])
 print(sum(elves[:3]))
 
 # from time import time
-
-
 # st_time = time()
 # b = dict()
 # for i in range(1, 10000):
